@@ -3,35 +3,20 @@
 #### 介绍
 麦麦插件生成器
 
-#### 软件架构
-软件架构说明
 
+# 使用前**必读*** ***！！！***
+[麦麦开发文档](https://docs.mai-mai.org/develop/plugin_develop/plugin_examples)
+## ***目前插件生成器最新稳定版本为0.4！***
+>修改配置时使用硅基流动的用户只需修改167行的apikey（sk-xxxxxxxxx）为您的apikey（sk-开头）即可！
+>>~~记得别把引号删了！~~
+##### 插件生成器生成的插件并不包含__init__.py，所以请按照一下步骤手动创建
+1. 在src/plugins/你的插件名/actions/目录下创建插件文件
+2. 新建**插件名.py**文件
+3. 在src/plugins/你的插件名/__init__.py中导入你的插件类
+```python
+# src/plugins/你的插件名/__init__.py
+from .actions.your_action import YourAction#your_action是是你的插件文件，例如插件a.py，这里就是.actions.a
 
-#### 安装教程
+__all__ = ["YourAction"]#这一行是麦麦主程序显示的动作名称
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
