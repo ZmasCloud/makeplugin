@@ -4,7 +4,7 @@
 麦麦插件生成器
 
 
-# 使用前**必读*** ***！！！***
+# 使用前**必读** ***！！！***
 [麦麦开发文档](https://docs.mai-mai.org/develop/plugin_develop/plugin_examples)
 ## ***目前插件生成器最新稳定版本为0.4！***
 >修改配置时使用硅基流动的用户只需修改167行的apikey（sk-xxxxxxxxx）为您的apikey（sk-开头）即可！
