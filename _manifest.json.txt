@@ -1,0 +1,15 @@
+{
+  "manifest_version": 1,
+  "name": "麦麦插件生成器",
+  "version": "0.0.4",
+  "description": "让你的麦麦给你写麦麦v0.1插件！",
+  "author": {
+    "name": "zmas",
+    "url": "https://bgithub.xyz/ZmasCloud"
+  },
+  "license": "AGPL-3.0",
+  "host_application": {
+    "min_version": "0.7.0",
+    "max_version": "0.7.9"
+  }
+}
